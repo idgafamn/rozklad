@@ -62,7 +62,7 @@ const scheduleData = {
     ],
     Thu: [
       { num:3, time:["11:50","13:10"], subject:"Філософія", type:"ПрС", teacher:"доц. Джунь Валерій Володимирович", tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"5Б"}] },
-      { num:4, time:["13:30","14:50"], subject:"Комп'ютерні мережі та протоколи передачі даних", type:"Л", teacher:"доц. Цибуляк Богдан Зіновійович", tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"31/К"}] }
+      { num:4, time:["13:30","14:50"], subject:"Комп'ютерні мережі та протоколи передачі даних", type:"Л", teacher:"доц. Цибуляк Богдан Зіновійович", tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"2/Б"}] }
     ],
     Fri: [
       { num:1, time:["08:30","09:50"], subject:"Комп'ютерні мережі та протоколи передачі даних", type:"Лаб", teacher:"доц. Цибуляк Богдан Зіновійович", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"№3/Т"}] },
