@@ -18,17 +18,17 @@ const scheduleData = {
     Mon: [
       { num:1, time:["08:30","09:50"], subject:"Веб програмування на стороні клієнта", type:"Л",   teacher:"доц. Демків Лідія Степанівна",           tags:[{cls:"tag-flow",    icon:"teal",  text:"Потік 2/Б"}] },
       { num:2, time:["10:10","11:30"], subject:"Іноземна мова",                         type:"ПрС", teacher:"доц. Гуляк Оксана Богданівна",           tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"407/Т"}] },
-      { num:3, time:["11:50","13:10"], subject:"Філософія",                              type:"Л",   teacher:"доц. Лосик Ореста Миколаївна",           tags:[{cls:"tag-flow",    icon:"teal",  text:"Потік 1/Б"}] },
       { num:4, time:["13:30","14:50"], subject:"Веб програмування на стороні клієнта", type:"Лаб", teacher:"доц. Демків Лідія Степанівна",           tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"106/Б"}] }
     ],
     Tue: [
-      { num:1, time:["08:30","09:50"], subject:"Історія української культури",          type:"ПрС", teacher:"асист. Маринюк Андрій Володимирович",   tags:[{cls:"tag-room",    icon:"blue",  text:"213/Т"}] },
+      { num:1, time:["08:30","09:50"], subject:"Історія української культури",          type:"Л",   teacher:"доц. Бойко Ігор Мирославович",       tags:[{cls:"tag-flow",icon:"teal",text:"Потік 1/Б"}] },
       { num:2, time:["10:10","11:30"], subject:"Прикладна статистика та ймовірнісні процеси", type:"Л", teacher:"проф. Болеста Іван Михайлович",    tags:[{cls:"tag-flow",    icon:"teal",  text:"Потік"},{cls:"tag-room",icon:"blue",text:"130/Т"}] }
     ],
     Wed: [
       { num:3, time:["11:50","13:10"], subject:"Математичні методи дослідження операцій",       type:"Лаб", teacher:"асист. Вдовиченко Віктор Мар'янович", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"№13/Т"}] },
       { num:4, time:["13:30","14:50"], subject:"Іноземна мова",                                 type:"ПрС", teacher:"доц. Гуляк Оксана Богданівна",          tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"407/Т"}] },
-      { num:5, time:["15:05","16:25"], subject:"Прикладна статистика та ймовірнісні процеси",   type:"Лаб", teacher:"доц. Калівошка Богдана Михайлівна",     tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"313/Т"}] }
+      { num:5, time:["15:05","16:25"], subject:"Прикладна статистика та ймовірнісні процеси",   type:"Лаб", teacher:"доц. Калівошка Богдана Михайлівна",     tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"313/Т"}] },
+      { num:6, time:["16:40","18:00"], subject:"Базова загальна військова підготовка", type:"Л", teacher:"вул. Кирила і Мефодія, 8", tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"31/К"}] }
     ],
     Thu: [
       { num:3, time:["11:50","13:10"], subject:"Філософія",                                              type:"ПрС", teacher:"доц. Джунь Валерій Володимирович",    tags:[{cls:"tag-room",icon:"blue",text:"5/Б"}] },
@@ -36,7 +36,8 @@ const scheduleData = {
     ],
     Fri: [
       { num:1, time:["08:30","09:50"], subject:"Комп'ютерні мережі та протоколи передачі даних", type:"Лаб", teacher:"доц. Цибуляк Богдан Зіновійович", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"№3/Т"}] },
-      { num:2, time:["10:10","11:30"], subject:"Математичні методи дослідження операцій",        type:"Л",   teacher:"доц. Горон Богдан Ігорович",       tags:[{cls:"tag-flow",    icon:"teal",  text:"Потік"},{cls:"tag-room",icon:"blue",text:"129/Т"}] }
+      { num:2, time:["10:10","11:30"], subject:"Математичні методи дослідження операцій",        type:"Л",   teacher:"доц. Горон Богдан Ігорович",       tags:[{cls:"tag-flow",    icon:"teal",  text:"Потік"},{cls:"tag-room",icon:"blue",text:"129/Т"}] },
+      { num:4, time:["13:30","14:50"], subject:"Big Data Analytics (ДВВС)", type:"Л", teacher:"доц. Максимук Андрій Олександрович", tags:[{cls:"tag-flow", icon:"teal", text:"Потік"},{cls:"tag-room",icon:"blue",text:"Онлайн"}] }
     ],
     Sat: [],
     Sun: []
@@ -50,18 +51,23 @@ const scheduleData = {
       { num:4, time:["13:30","14:50"], subject:"Веб програмування на стороні клієнта", type:"Лаб", teacher:"доц. Демків Лідія Степанівна", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"106/Б"}] }
     ],
     Tue: [
-      { num:1, time:["08:30","09:50"], subject:"Історія української культури",          type:"Л",   teacher:"доц. Бойко Ігор Мирославович",       tags:[{cls:"tag-flow",icon:"teal",text:"Потік 1/Б"}] },
+      { num:1, time:["08:30","09:50"], subject:"Історія української культури",          type:"ПрС", teacher:"асист. Маринюк Андрій Володимирович",   tags:[{cls:"tag-room",    icon:"blue",  text:"213/Т"}] },
       { num:2, time:["10:10","11:30"], subject:"Прикладна статистика та ймовірнісні процеси", type:"Л", teacher:"проф. Болеста Іван Михайлович", tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"130/Т"}] }
     ],
     Wed: [
-      { num:3, time:["11:50","13:10"], subject:"Математичні методи дослідження операцій", type:"Лаб", teacher:"асист. Вдовиченко Віктор Мар'янович", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"№13/Т"}] }
+      { num:3, time:["11:50","13:10"], subject:"Математичні методи дослідження операцій",       type:"Лаб", teacher:"асист. Вдовиченко Віктор Мар'янович", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"№13/Т"}] },
+      { num:4, time:["13:30","14:50"], subject:"Іноземна мова",                                 type:"ПрС", teacher:"доц. Гуляк Оксана Богданівна",          tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"407/Т"}] },
+      { num:5, time:["15:05","16:25"], subject:"Прикладна статистика та ймовірнісні процеси",   type:"Лаб", teacher:"доц. Калівошка Богдана Михайлівна",     tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"313/Т"}] },
+      { num:6, time:["16:40","18:00"], subject:"Базова загальна військова підготовка", type:"ПрС", teacher:"вулиця Петра Дорошенка, 41", tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"*"}] }
     ],
     Thu: [
-      { num:4, time:["13:30","14:50"], subject:"Комп'ютерні мережі та протоколи передачі даних", type:"Л", teacher:"доц. Цибуляк Богдан Зіновійович", tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"2/Б"}] }
+      { num:3, time:["11:50","13:10"], subject:"Філософія", type:"ПрС", teacher:"доц. Джунь Валерій Володимирович", tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"5Б"}] },
+      { num:4, time:["13:30","14:50"], subject:"Комп'ютерні мережі та протоколи передачі даних", type:"Л", teacher:"доц. Цибуляк Богдан Зіновійович", tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"31/К"}] }
     ],
     Fri: [
       { num:1, time:["08:30","09:50"], subject:"Комп'ютерні мережі та протоколи передачі даних", type:"Лаб", teacher:"доц. Цибуляк Богдан Зіновійович", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"№3/Т"}] },
-      { num:2, time:["10:10","11:30"], subject:"Математичні методи дослідження операцій",        type:"Л",   teacher:"доц. Горон Богдан Ігорович",       tags:[{cls:"tag-flow",    icon:"teal",  text:"Потік"},{cls:"tag-room",icon:"blue",text:"129/Т"}] }
+      { num:2, time:["10:10","11:30"], subject:"Математичні методи дослідження операцій",        type:"Л",   teacher:"доц. Горон Богдан Ігорович",       tags:[{cls:"tag-flow",    icon:"teal",  text:"Потік"},{cls:"tag-room",icon:"blue",text:"129/Т"}] },
+      { num:4, time:["13:30","14:50"], subject:"Big Data Analytics (ДВВС)", type:"Л", teacher:"доц. Максимук Андрій Олександрович", tags:[{cls:"tag-flow", icon:"teal", text:"Потік"},{cls:"tag-room",icon:"blue",text:"Онлайн"}] }
     ],
     Sat: [],
     Sun: []
