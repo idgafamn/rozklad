@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Розклад</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f0f13">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
+<body>
+<div class="phone">
+  <div class="tabs">
+
+    <div class="tab active" onclick="switchTab(this, 'current')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="4" width="18" height="18" rx="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8"  y1="2" x2="8"  y2="6"/>
+        <line x1="3"  y1="10" x2="21" y2="10"/>
+      </svg>
+      Цей тиждень
+    </div>
+
+    <div class="tab" onclick="switchTab(this, 'next')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="4" width="18" height="18" rx="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8"  y1="2" x2="8"  y2="6"/>
+        <line x1="3"  y1="10" x2="21" y2="10"/>
+      </svg>
+      Наступний
+    </div>
+    <div class="tab tab-sem">
+      <div class="sem-content">
+        <span class="sem-weeks" id="sem-weeks-left"></span>
+        <div class="sem-bar-track">
+          <div class="sem-bar-fill" id="sem-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="day-tabs" id="day-tabs"></div>
+
+  <div class="date-header">
+    <div class="date-title" id="date-title"></div>
+  </div>
+
+  <div class="events" id="events-container"></div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
