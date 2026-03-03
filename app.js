@@ -271,3 +271,44 @@ document.addEventListener("DOMContentLoaded", () => {
   renderAll();
   scheduleNextDayRefresh();
 });
+
+(function initSwipe() {
+  let startX = 0, startY = 0, isDragging = false;
+  const THRESHOLD = 50;
+  const ANGLE = 35;
+
+  const el = document.querySelector('.phone');
+
+  el.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+    isDragging = true;
+  }, { passive: true });
+
+  el.addEventListener('touchend', e => {
+    if (!isDragging) return;
+    isDragging = false;
+
+    const dx = e.changedTouches[0].clientX - startX;
+    const dy = e.changedTouches[0].clientY - startY;
+
+    if (Math.abs(dx) < THRESHOLD) return;
+    if (Math.abs(dy) / Math.abs(dx) > Math.tan(ANGLE * Math.PI / 180)) return;
+
+    const base  = getViewWeekBase();
+    const days  = weekDays(base);
+    const idx   = days.findIndex(d => d.date.toDateString() === viewDate.toDateString());
+
+    if (dx < 0) {
+      if (idx < days.length - 1) {
+        viewDate = new Date(days[idx + 1].date);
+        renderAll();
+      }
+    } else {
+      if (idx > 0) {
+        viewDate = new Date(days[idx - 1].date);
+        renderAll();
+      }
+    }
+  }, { passive: true });
+})();
