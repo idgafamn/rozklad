@@ -31,7 +31,6 @@ const scheduleData = {
       { num:6, time:["16:40","18:00"], subject:"Базова загальна військова підготовка", type:"Л", teacher:"вул. Кирила і Мефодія, 8", tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"31/К"}] }
     ],
     Thu: [
-      { num:3, time:["11:50","13:10"], subject:"Філософія",                                              type:"ПрС", teacher:"доц. Джунь Валерій Володимирович",    tags:[{cls:"tag-room",icon:"blue",text:"5/Б"}] },
       { num:4, time:["13:30","14:50"], subject:"Комп'ютерні мережі та протоколи передачі даних",        type:"Л",   teacher:"доц. Цибуляк Богдан Зіновійович",    tags:[{cls:"tag-flow",icon:"teal",text:"Потік"},{cls:"tag-room",icon:"blue",text:"2/Б"}] }
     ],
     Fri: [
