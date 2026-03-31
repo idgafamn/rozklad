@@ -56,8 +56,7 @@ const scheduleData = {
     Wed: [
       { num:3, time:["11:50","13:10"], subject:"Математичні методи дослідження операцій",       type:"Лаб", teacher:"асист. Вдовиченко Віктор Мар'янович", tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"№13/Т"}] },
       { num:4, time:["13:30","14:50"], subject:"Іноземна мова",                                 type:"ПрС", teacher:"доц. Гуляк Оксана Богданівна",          tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"407/Т"}] },
-      { num:5, time:["15:05","16:25"], subject:"Прикладна статистика та ймовірнісні процеси",   type:"Лаб", teacher:"доц. Калівошка Богдана Михайлівна",     tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"313/Т"}] },
-      { num:6, time:["16:40","18:00"], subject:"Базова загальна військова підготовка", type:"ПрС", teacher:"вулиця Петра Дорошенка, 41", tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"*"}] }
+      { num:5, time:["15:05","16:25"], subject:"Прикладна статистика та ймовірнісні процеси",   type:"Лаб", teacher:"доц. Калівошка Богдана Михайлівна",     tags:[{cls:"tag-subgroup",icon:"orange",text:"підгр. 1"},{cls:"tag-room",icon:"blue",text:"313/Т"}] }
     ],
     Thu: [
       { num:3, time:["11:50","13:10"], subject:"Філософія", type:"ПрС", teacher:"доц. Джунь Валерій Володимирович", tags:[{cls:"tag-group",   icon:"purple",text:"Збірна група"},{cls:"tag-room",icon:"blue",text:"5Б"}] },
